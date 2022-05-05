@@ -8,6 +8,14 @@ for(int i = 0; i < array.Length; i++)
     Console.WriteLine("Введите элимент массива: ");
     array[i] = Convert.ToInt32(Console.ReadLine());
 }
+
+for(int i = 0; i < array.Length; i++)
+{
+    array[i] *= -1;
+    //array[i] = ~array[i]+1;
+}
+WriteArray(array);
+
 void WriteArray(int[] array)
 {
     for(int i = 0; i < array.Length; i++)
@@ -16,11 +24,4 @@ void WriteArray(int[] array)
     }
     Console.WriteLine();
 }
-WriteArray(array);
-
-for(int i = 0; i < array.Length; i++)
-{
-    array[i] *= -1;
-}
-
 WriteArray(array);

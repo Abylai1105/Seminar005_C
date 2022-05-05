@@ -28,9 +28,8 @@ for(int i = 0; i < array.Length; i++)
         Console.WriteLine($"Число {searchNum} в элементе массива {i} ");
         break;
     }
-    else if (array[i] != searchNum)
+    else if (i == array.Length-1 )
     {
         Console.WriteLine($"Число {searchNum} нету в элементе массива ");
-        break;
     }
 }
