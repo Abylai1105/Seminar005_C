@@ -1,7 +1,5 @@
-﻿// Задача 36: Задайте одномерный массив, заполненный случайными числами.
-// Найдите сумму элементов, стоящих на нечётных позициях.
-// [3, 7, 23, 12] -> 19
-// [-4, -6, 89, 6] -> 0
+﻿//Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+//[3 7 22 2 78] -> 76
 
 Console.WriteLine("Введите размер массива");
 int sizeArray = Convert.ToInt32(Console.ReadLine());
@@ -26,11 +24,5 @@ void FillArray(int[] array)
 FillArray(randomArray);
 WriteArray(randomArray);
 
-int sum = 0;
-int mas = Convert.ToInt32(Console.ReadLine());
+int
 for (int index = 0; index < randomArray.Length; index++)
-{
-    while(index + 1)
-    sum += index;
-}
-Console.WriteLine(sum);
